@@ -26,7 +26,7 @@ The `users` table is structured like this:
 | 2  | david@beaconcrm.org | true | abc12312312abc |
 
 
-## Your task
+## Requirements
 
 As mentioned above, we want to encourage users who don't have 2FA enabled to enable it when they are logging in.
 
@@ -36,4 +36,20 @@ To make this possible, we'd like you to design:
 
 1. A new API endpoint to check if the user should be encouraged to enable 2FA
 2. Some changes to the `users` table, or an entirely new table if you prefer (the API endpoint should use this)
-3. A new page 
+3. A new frontend page prompting users to enable 2FA after logging in (similar to Stripe's page below)
+
+![Stripe](https://github.com/beaconcrm/beacon-2fa-design/blob/master/stripe-example.png?raw=true)
+
+## Your task
+
+We'd like you to design a system to make this possible. __You do not need to write any code.__
+
+We'd like you to write up a basic design document, which has the following sections:
+
+1. User journeys - what will users experience in the following scenarios:
+    1. Already has 2FA enabled
+    2. Does not have 2FA enabled, skips the suggestion
+    3. Does not have 2FA enabled, enables 2FA
+2. New API endpoints - the endpoint(s) that you'd like to add
+3. Database changes - what changes need to be made to the database, and why? 
+4. Frontend - what page(s) do we need to build, and how should they interact with the API endpoints?
