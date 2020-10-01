@@ -53,3 +53,5 @@ We'd like you to write up a basic design document, which has the following secti
 2. New API endpoints - the endpoint(s) that you'd like to add
 3. Database changes - what changes need to be made to the database, and why? 
 4. Frontend - what page(s) do we need to build, and how should they interact with the API endpoints?
+
+This document **does not need to be perfect**. It should be a draft document that you can bring to a meeting, for us to discuss together in more detail!
